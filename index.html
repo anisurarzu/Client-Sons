@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sardar&Sons</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Berkshire+Swash&family=Henny+Penny&family=Nunito+Sans:wght@200&family=Sacramento&family=Titillium+Web:wght@200;600&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <!-- slick carousel  -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- owl carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <section style="background-color: red">
+      <div class="first-div">
+        <div>
+          <p><i class="fas fa-phone"></i> 02077912489</p>
+        </div>
+        <div>
+          <p><i class="fas fa-envelope"></i> info@sardarandsons.com</p>
+        </div>
+        <div class="link">
+          <div>
+            <a href="#">Take Order</a>
+          </div>
+          <div>
+            <a href="#">My Cart</a>
+          </div>
+        </div>
+
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-pinterest-p"></i>
+        </div>
+      </div>
+      <div class="second-div">
+        <header>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="#">
+              <img
+                class="container-fluid"
+                src="https://i.ibb.co/nC6Tx4s/Sardar-Sons.png"
+                alt=""
+              />
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a
+                    id="main-box"
+                    onmouseover="openFunction()"
+                    class="nav-link"
+                    href="#"
+                  >
+                    Shop <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">ContactUs</a>
+                </li>
+              </ul>
+
+              <div class="icon">
+                <i class="fas fa-user"></i>
+                <i class="fas fa-cart-plus"></i>
+                <i class="fas fa-heart"></i>
+
+                <i onclick="openSearchField()" class="fas fa-search"></i>
+              </div>
+
+              <div class="cart-value">
+                <h1>0</h1>
+              </div>
+              <div class="cart-value-two">
+                <h1>0</h1>
+              </div>
+            </div>
+          </nav>
+        </header>
+      </div>
+    </section>
+
+    <section>
+      <div id="menu" class="side-menu">
+        <a href="#"> Baby Dresses 6m - 24 m</a>
+        <a href="#">Baby gift set .</a>
+        <a href="#">Boys Bow Ties</a>
+        <a href="#"> Belts</a>
+        <a href="#"> Baby Shawl & Blankets</a>
+        <a href="#"> Boys Cravats</a>
+        <a href="#"> Boys Cummerband</a>
+        <a href="#"> Boys Ties</a>
+        <a href="#"> Braces</a>
+        <a href="#"> Cufflinks</a>
+        <a href="#"> Christening</a>
+        <a href="#"> Girls Dresses 2-14 years</a>
+        <a href="#"> Men</a>
+        <a href="#"> Men's Shirts</a>
+        <a href="#" onclick="closeFunction()" class="close-btn"
+          ><i class="fas fa-times"></i
+        ></a>
+      </div>
+    </section>
+
+    <section>
+      <div id="search" class="search-field">
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            onclick="closeSearchField()"
+            class="btn bg-light my-2 my-sm-0"
+            type="submit"
+          >
+            <i class="fas fa-times"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- product slider section -->
+
+    <section class="product-container container">
+      <h4>New Arrival</h4>
+      <hr />
+      <div class="container">
+        <div class="row slider container">
+          <div id="product-slider" class="owl-carousel container">
+            <!-- slide 1 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommended section -->
+    <section class="product-container-two container">
+      <h4>Recommended For You</h4>
+      <hr />
+      <div class="container">
+        <div class="row slider container">
+          <div id="product-slider-two" class="owl-carousel container">
+            <!-- slide 1 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/0sfg60T/5dec1f7c45001ed823d6ab6e-Vgb1-MR8-Jr-GK0.png"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/0sfg60T/5dec1f7c45001ed823d6ab6e-Vgb1-MR8-Jr-GK0.png"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+            <!-- slide 4 -->
+            <div class="col-md-12">
+              <div class="product">
+                <div class="product-image">
+                  <a href="#" class="image">
+                    <img
+                      class="pic-1"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                    <img
+                      class="pic-2"
+                      src="https://i.ibb.co/r4R8N9T/5edfb2bb586655a10fee4a4c-ODLR-0004-3.jpg"
+                      alt=""
+                    />
+                  </a>
+                  <span class="discount">Sale</span>
+                  <a href="#" class="cart">Add to Cart</a>
+                  <div>
+                    <ul class="links">
+                      <li>
+                        <a href="#"><i class="fas fa-search"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="far fa-heart"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content">
+                    <span class="category"><a href="#">Cloths</a></span>
+                    <h3 class="title"><a href="#">Dress-010</a></h3>
+                    <div class="price">
+                      $ 12.00
+                      <span>$ 13.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- \new -->
+
+    <!-- script file -->
+
+    <!-- slick carousel -->
+
+    <!-- <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+
+    <!-- owl script -->
+  </body>
+</html>

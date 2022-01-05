@@ -1,0 +1,321 @@
+.first-div {
+  margin-left: 240px;
+  margin-right: 250px;
+  font-size: 10px;
+  padding-top: 30px;
+  display: flex;
+}
+.first-div p {
+  color: white;
+  padding-left: 7px;
+}
+.link {
+  padding-left: 101px;
+  display: flex;
+}
+.first-div a {
+  color: white;
+  padding-left: 10px;
+}
+.social {
+  display: flex;
+  color: white;
+  padding-left: 239px;
+}
+.social .fab {
+  padding-left: 5px;
+}
+.second-div {
+  padding-bottom: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 10px;
+}
+.navbar-brand {
+  font-family: "Abril Fatface", cursive;
+  color: red !important;
+  font-size: 30px;
+}
+
+.icon {
+  border-left: 1px solid red;
+}
+
+.icon .fas {
+  padding-left: 10px;
+  font-size: 20px;
+}
+.cart-value {
+  background: red;
+  color: white;
+  padding: 2px;
+  width: 13px;
+  height: 15px;
+  border-radius: 2px;
+  position: absolute;
+  left: 657px;
+  top: 13px;
+}
+.cart-value-two {
+  background: red;
+  color: white;
+  padding: 2px;
+  width: 13px;
+  height: 15px;
+  border-radius: 2px;
+  position: absolute;
+  left: 624px;
+  top: 13px;
+}
+.cart-value h1 {
+  font-size: 10px;
+  text-align: center;
+}
+.cart-value-two h1 {
+  font-size: 10px;
+  text-align: center;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  padding-top: 100px;
+  overflow-x: hidden;
+  transition: all 0.5s;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 64px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  display: block;
+}
+.side-menu a:hover {
+  text-decoration: underline;
+}
+.close-btn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 30px !important;
+  margin-left: 32px;
+}
+
+.search-field {
+  position: absolute;
+  top: 88px;
+  right: 253px;
+}
+#search {
+  display: none;
+}
+
+/* product */
+
+.product-container {
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+}
+.slider {
+  padding-top: 30px;
+}
+
+.product-container a {
+  text-decoration: none !important;
+}
+.product {
+  background-color: #fff;
+  text-align: center;
+}
+.product .product-image {
+  overflow: hidden;
+  position: relative;
+}
+.product .product-image a.image {
+  display: block;
+}
+.product .product-image img {
+  width: 100%;
+  height: auto;
+}
+.product .product-image .pic-1 {
+  transition: 0.5s;
+}
+
+.product .product-image:hover .pic-1 {
+  opacity: 0;
+}
+.product .product-image .pic-2 {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.product .product-image:hover .pic-2 {
+  opacity: 1;
+}
+.product .discount {
+  color: #fff;
+
+  background: black;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.product .cart {
+  color: #000;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 100%;
+  opacity: 0.85;
+  padding: 4px 14px;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: -75px;
+  left: 50%;
+  transition: 0.5s;
+}
+.product .cart:hover {
+  opacity: 1;
+  color: #fff;
+  background: black;
+}
+.product:hover .cart {
+  bottom: 0px;
+}
+.product .links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  opacity: 0;
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+
+.product:hover .links {
+  opacity: 1;
+  right: 10px;
+}
+
+.product .links li a {
+  color: #fff;
+  font-size: 12px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  display: block;
+  background: #000;
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
+.product:hover .links li a:hover {
+  color: #fff;
+  background: red;
+}
+
+.product .content {
+  padding: 12px;
+}
+.product .category {
+  font-size: 17px;
+  margin: 0 0 5px;
+  display: block;
+}
+
+.product .category a {
+  color: #999;
+  transition: 0.5s;
+  font-size: 14px;
+}
+.product .category a:hover {
+  color: #555;
+}
+.product .title {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.product .title a {
+  color: #444;
+  transition: 0.5s;
+}
+
+.product .price {
+  color: red;
+  font-size: 17px;
+  font-weight: 700;
+}
+.product .price span {
+  color: #888;
+  margin: 0 5px 0 0;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 999px) {
+  .product {
+    margin: 0 0 30px;
+  }
+}
+/* 
+.owl-controls .owl-buttons {
+  position: relative;
+}
+
+.owl-controls .owl-prev {
+  position: absolute;
+  left: -40px;
+  bottom: 185px;
+  padding: 8px 17px;
+  background: #000;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.owl-controls .owl-next {
+  position: absolute;
+  left: -40px;
+  bottom: 185px;
+  padding: 8px 17px;
+  background: #000;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.owl-controls .owl-prev:after,
+.owl-controls .owl-next:after {
+  content: "\f104";
+  font-family: FontAwesome;
+  color: #fff;
+  font-size: 16px;
+}
+.owl-controls .owl-next:after {
+  content: "\f105";
+}
+.owl-controls .owl-prev:hover,
+.owl-controls .owl-next:hover {
+}
+ */
