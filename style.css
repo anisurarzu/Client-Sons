@@ -571,3 +571,11 @@
 .footer-two img {
   padding-left: 230px;
 }
+
+.link-container {
+  background: #f0f4f6;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
