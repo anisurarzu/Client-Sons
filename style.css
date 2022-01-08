@@ -376,10 +376,9 @@
     display: flex;
   }
   .social {
-    font-size: 12px;
     display: flex;
     color: white;
-    padding-left: 239px;
+    padding-left: 309px;
   }
   .second-div {
     padding-bottom: 100px;
@@ -577,5 +576,6 @@
   margin-bottom: 20px;
   padding: 20px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 20px;
 }
